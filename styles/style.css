@@ -220,7 +220,7 @@ li>a {
 }
 
 .content {
-    background-color: antiquewhite;
+    background-color: rgba(236, 236, 236, 0.89);
 }
 
 .content__sort {
@@ -360,7 +360,7 @@ li>a {
     width: 35px;
     display: inline-block;
     border-radius: 50%;
-    background: antiquewhite;
+    background: #0d3351;
 }
 
 .social__img-ref {
