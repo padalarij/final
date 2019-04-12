@@ -46,7 +46,7 @@ header {
 
 .nav-url {
     font-family: Raleway;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -483,18 +483,30 @@ address {
     }
 
     .content__catalog>.catalog__item:first-child {
-        height: 600px;
+        height: 425px;
     }
 
-    .content__catalog__sidebar .catalog__item {
-        height: 290px;
+    .content__catalog__sidebar > .catalog__item {
+        height: 200px;
     }
-
+    .content__catalog__sidebar  .content__cruise__pathtime{
+        font-size:10px;
+    }
     .content__catalog__sidebar .item__mainpict {
         height: 100px;
     }
+    .content__catalog__sidebar .content__cruise__title {
+        font-size: 13px;
+    }
+    .content__catalog__sidebar .content__cruise__price {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        bottom: 12px;
 
+    }
     .title {
+        margin-top :5px;
         white-space: nowrap;
         font-size: 72px;
     }
