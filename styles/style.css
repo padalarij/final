@@ -14,6 +14,10 @@ p {
     padding: 0;
 }
 
+.mobile-drop {
+    display: none;
+}
+
 .mainbutton {
     background: linear-gradient(to bottom,
         #0d3351 20%,
@@ -124,7 +128,7 @@ header {
 
 .blacktriangle {
     position: relative;
-    bottom:2px;
+    bottom: 2px;
     width: 0px;
     height: 0px;
     display: inline-block;
@@ -486,18 +490,22 @@ address {
         height: 425px;
     }
 
-    .content__catalog__sidebar > .catalog__item {
+    .content__catalog__sidebar>.catalog__item {
         height: 200px;
     }
-    .content__catalog__sidebar  .content__cruise__pathtime{
-        font-size:10px;
+
+    .content__catalog__sidebar .content__cruise__pathtime {
+        font-size: 10px;
     }
+
     .content__catalog__sidebar .item__mainpict {
         height: 100px;
     }
+
     .content__catalog__sidebar .content__cruise__title {
         font-size: 13px;
     }
+
     .content__catalog__sidebar .content__cruise__price {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -505,8 +513,9 @@ address {
         bottom: 12px;
 
     }
+
     .title {
-        margin-top :5px;
+        margin-top: 5px;
         white-space: nowrap;
         font-size: 72px;
     }
@@ -551,10 +560,14 @@ address {
 }
 
 @media only screen and (max-width: 750px) {
+    .mobile-drop {
+        display: block;
+    }
 
     .title {
         font-size: 50px;
     }
+
     .hero__right {
         display: none;
     }
@@ -575,16 +588,20 @@ address {
         width: 70px;
         height: 70px;
     }
-   .cruise-more{
-       margin-bottom: 31px;
-   }
+
+    .cruise-more {
+        margin-bottom: 31px;
+    }
+
     .main__theme {
         font-size: 26px;
     }
-    .social__img-ref{
+
+    .social__img-ref {
         position: relative;
         left: -0px;
     }
+
     .title {
         font-size: 50px;
         text-align: center;
@@ -602,13 +619,15 @@ address {
     .choose-cruise {
         margin-top: 43px;
     }
+
     .content__sort {
         margin-bottom: 20px;
     }
+
     #drop {
-        height: 250px;
+        height: 460px;
         width: 250px;
-        padding-top: 15px;
+        padding-top: 30px;
     }
 
     .info {
@@ -635,12 +654,15 @@ address {
         display: unset;
         text-align: center;
     }
+
     .content__catalog .catalog__item:not(:first-child) {
         margin-top: 0;
     }
-    .catalog__item{
+
+    .catalog__item {
         margin-bottom: 20px;
     }
+
     .catalog__item>*:not(:first-child) {
         margin-left: 22px;
     }
