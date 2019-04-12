@@ -1,16 +1,37 @@
+var body = $("body");
+var first_click=true;
+function DeleteLists() {
+    $(".list").click(function () {
+        $(".list").css({ "display": "none" });
+        click=0;
+    })
+    body.scroll(function () {
+        $(".list").css({ "display": "none" });
+        click=0;
+    })
+}
+function ShowElementClicks(button, list) {
+    button.click(function () {
+        list.css({ "display": "block", "position": "absolute", "background": "#0d3351", "padding-top": "15px", "padding-left": "15px", "padding-right": "15px" });
+    });
+    return true;
+}
 
-window.onload=function(){
-    var value=0;
-    mainnav.onclick = function(event) {
-        if (value % 2 == 1)
+var arrdatalist = [$(".mainbutton"), $(".hero__mainlist"), $(".lk"), $(".hero__userlist"), $(".rouble"), $(".hero__roublelist"), $(".language"), $(".hero__languagelist")]
+window.onload = function () {
+    for (i = 0; i < 8; i=i+2) {
+        if (ShowElementClicks(arrdatalist[i],arrdatalist[i+1]))
         {
-            document.getElementById('drop').id = 'no__drop';
+            first_click=false;
         }
-        if (value % 2 == 0)
-        {
-            document.getElementById('no__drop').id = 'drop';
-        }
-        value=value+1;
-    }    
-
+    }
+    var sortbutton = $(".sort");
+    var sortlist = $(".content__sortlist");
+    sortbutton.click(function () {
+        sortlist.css({ "display": "block", "position": "relative", "background": "#0d3351", "padding-top": "15px", "padding-left": "15px", "padding-right": "15px" });
+        first_click=false;
+    })
+    if (first_click == false) {
+        first_click=DeleteLists();
+    }
 }

@@ -116,10 +116,12 @@ header {
     padding-top: 33px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .hero__right {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 .hero-right__nav>li {
@@ -279,7 +281,9 @@ li>a {
 .price {
     display: inline-block;
 }
-
+.content__sortlist__item{
+    color:white;
+}
 .item__cruise__price__oldprice {
     display: inline-block;
     font-family: RobotoSlab;
@@ -718,6 +722,10 @@ address {
     .about {
         font-size: 14px;
         margin-bottom: 39px;
+    }
+    li>a{
+        line-height: 1;
+        font-size:15px;
     }
 }
 

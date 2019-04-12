@@ -14,11 +14,11 @@
         <div class="container">
             <div class="hero">
                 <div class="hero__left">
-                    <button class="mainbutton" type="button">
+                    <button class="mainbutton listbutton" type="button">
 
                     </button>
                     <nav>
-                        <ul class="hero__mainlist">
+                        <ul class="hero__mainlist list">
                             <li><a href="#">
                                     Личный кабинет
                                 </a></li>
@@ -55,47 +55,48 @@
                             <li class="hero-right__nav-item">
                                 <img alt="" class="nav-logo" src="./images/user.svg">
                                 <a class="nav-url" href="#">Личный кабинет</a>
-                                <div class="blacktriangle"></div>
-                                <ul class="hero__userlist">
+                                <div class="blacktriangle lk listbutton"></div>
+                                <ul class="hero__userlist list">
                                     <li>
-                                        <a href="#">1</a>
+                                        <a href="#">Настройки</a>
                                     </li>
                                     <li>
-                                        <a href="#">2</a>
+                                        <a href="#">Пополнение счёта</a>
                                     </li>
                                     <li>
-                                        <a href="#">3</a>
+                                        <a href="#">Выход</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="hero-right__nav-item">
                                 <img alt="" class="nav-logo" src="./images/rouble.svg">
                                 <a class="nav-url" href="#">Рубль</a>
-                                <div class="blacktriangle"></div>
-                                <ul class="hero__roublelist">
+                                <div class="blacktriangle rouble listbutton"></div>
+                                <ul class="hero__roublelist list">
                                     <li>
-                                        <a href="#">1</a>
+                                        <a href="#">Доллар</a>
                                     </li>
                                     <li>
-                                        <a href="#">2</a>
+                                        <a href="#">Евро</a>
                                     </li>
                                     <li>
-                                        <a href="#">3</a>
+                                        <a href="#">Гривна</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="hero-right__nav-item">
                                 <img alt="" class="nav-logo" src="./images/rouble.svg">
-                                <a class="nav-url" href="#">Ru</a>
-                                <ul class="hero__languagelist">
+                                <a class="nav-url" href="#" class="language" >Ru</a>
+                                <div class="blacktriangle language listbutton"></div>
+                                <ul class="hero__languagelist list">
                                     <li>
-                                        <a href="#">1</a>
+                                        <a href="#">Ru</a>
                                     </li>
                                     <li>
-                                        <a href="#">2</a>
+                                        <a href="#">Eng</a>
                                     </li>
                                     <li>
-                                        <a href="#">3</a>
+                                        <a href="#">Ukr</a>
                                     </li>
                                 </ul>
                             </li>
@@ -131,13 +132,13 @@
             </h2>
             <div class="content__sort">
                 Сортировать круизы по цене
-                <div class="blacktriangle">
+                <div class="blacktriangle sort listbutton">
 
                 </div>
-                <ul class="content__sortlist">
-                    <li>Сортировать круизы по дате начала</li>
-                    <li>Сортировать круизы по городу</li>
-                    <li>Сортировать круизы по рейтингу</li>
+                <ul class="content__sortlist list">
+                    <li class="content__sortlist__item"><a href="#">Сортировать круизы по дате начала</a></li>
+                    <li class="content__sortlist__item"><a href="#">Сортировать круизы по городу</a></li>
+                    <li class="content__sortlist__item"> <a href="#">Сортировать круизы по рейтингу</a></li>
                 </ul>
             </div>
             <div class="content__catalog">
@@ -303,6 +304,7 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/jquery.js"></script>
     <script src="./scripts/mainscript.js"></script>
 </body>
 
