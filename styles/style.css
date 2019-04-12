@@ -34,7 +34,7 @@ button {
 .hero__userlist,
 .hero__roublelist,
 .hero__languagelist,
-.catalog__sortlist {
+.content__sortlist {
     display: none;
 }
 
@@ -43,7 +43,7 @@ header {
     height: 657px;
 }
 
-.hero-nav-item {
+.hero-right__nav-item {
     margin-right: 20px;
 }
 
@@ -122,7 +122,7 @@ header {
     display: flex;
 }
 
-.hero-nav>li {
+.hero-right__nav>li {
     display: inline-block;
 }
 
@@ -193,7 +193,7 @@ a {
     margin-top: -150px;
 }
 
-.content__title__catalog {
+.content__title {
     margin-top: -80px;
 }
 
@@ -215,7 +215,7 @@ li>a {
     background-color: rgba(236, 236, 236, 0.89);
 }
 
-.catalog__sort {
+.content__sort {
     font-family: Raleway;
     font-size: 14px;
     font-weight: normal;
@@ -243,7 +243,7 @@ li>a {
     justify-content: space-between;
 }
 
-.content__catalog__sidebar {
+.catalog__sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -256,7 +256,7 @@ li>a {
 }
 
 
-.content__cruise__pathtime {
+.item__cruise__pathtime {
     width: 344px;
     height: 39px;
     font-family: Raleway;
@@ -270,7 +270,7 @@ li>a {
     color: #0d3351;
 }
 
-.content__cruise__title {
+.item__cruise__title {
     font-size: 18px;
     color: #00a2dd;
     line-height: 2.67;
@@ -280,7 +280,7 @@ li>a {
     display: inline-block;
 }
 
-.content__cruise__oldprice {
+.item__cruise__price__oldprice {
     display: inline-block;
     font-family: RobotoSlab;
     font-size: 18px;
@@ -294,7 +294,7 @@ li>a {
     margin-left: 20px;
 }
 
-.content__cruise__price {
+.item__cruise__price {
     margin-top: 22px;
     margin-bottom: 39px;
     font-family: RobotoSlab;
@@ -327,15 +327,15 @@ li>a {
     justify-content: space-between;
 }
 
-.info {
+.footer__info {
     flex-grow: 1;
 }
 
-.social {
+.footer__social {
     flex-grow: 10;
 }
 
-.help {
+.footer__help {
     flex-grow: 1;
 }
 
@@ -343,7 +343,7 @@ li>a {
     text-align: left;
 }
 
-.footer__title {
+.info__title {
     display: block;
 }
 
@@ -364,7 +364,7 @@ li>a {
 
 }
 
-.footer__title {
+.info__title {
     font-family: Raleway;
     font-size: 14px;
     font-weight: normal;
@@ -407,20 +407,20 @@ address {
     color: #0d3351;
 }
 
-.content__catalog .catalog__item:not(:first-child) {
+.content__catalog > .catalog__item:not(:first-child) {
     margin-top: 20px;
 }
 
 @media only screen and (min-width: 1300px) {
-    .catalog__item>*:not(:first-child) {
+    .catalog__item > *:not(:first-child) {
         margin-left: 37px;
     }
 
-    .content__catalog__sidebar .catalog__item {
+    .sidebar__catalog__item {
         height: 315px;
     }
 
-    .catalog__sort {
+    .content__sort {
         margin-top: 11px;
         margin-bottom: 42px;
     }
@@ -467,7 +467,7 @@ address {
         margin: 0;
     }
 
-    .catalog__sort {
+    .content__sort {
         margin-bottom: 30px;
     }
 
@@ -478,27 +478,27 @@ address {
         margin-bottom: 20px;
     }
 
-    .content__catalog>.catalog__item:first-child {
-        height: 425px;
+    .catalog__firstitem {
+        height: auto;
     }
 
-    .content__catalog__sidebar>.catalog__item {
+    .sidebar__catalog__item {
         height: 200px;
     }
 
-    .content__catalog__sidebar .content__cruise__pathtime {
+    .sidebar__item__cruise__pathtime {
         font-size: 10px;
     }
 
-    .content__catalog__sidebar .item__mainpict {
+    .sidebar__item__mainpict {
         height: 100px;
     }
 
-    .content__catalog__sidebar .content__cruise__title {
+    .sidebar__item__cruise__title {
         font-size: 13px;
     }
 
-    .content__catalog__sidebar .content__cruise__price {
+    .sidebar__item__cruise__price {
         margin-top: 0px;
         margin-bottom: 0px;
         position: relative;
@@ -521,25 +521,21 @@ address {
         width: 340px;
     }
 
-    content__catalog>.item__mainpict:first-child {
-        height: 350px;
-    }
-
     .cruise-more {
         margin-top: 25px;
         margin-bottom: 62px;
     }
 
-    .content__cruise__title {
+    .item__cruise__title {
         line-height: normal;
     }
 
-    .content__cruise__pathtime {
+    .item__cruise__pathtime {
         line-height: normal;
         width: 231px;
     }
 
-    .catalog__item>*:not(:first-child) {
+    .catalog__item > *:not(:first-child) {
         margin-left: 32px;
     }
 }
@@ -602,12 +598,12 @@ address {
         margin-top: 43px;
     }
 
-    .catalog__sort {
+    .content__sort {
         margin-bottom: 20px;
     }
 
 
-    .info {
+    .footer__info {
         display: none;
     }
 
@@ -644,7 +640,7 @@ address {
         margin-left: 22px;
     }
 
-    .content__cruise__pathtime {
+    .item__cruise__pathtime {
         width: 231px;
     }
 
@@ -653,31 +649,31 @@ address {
         width: 290px;
     }
 
-    .content__title__catalog {
+    .content__title {
         padding-top: 30px;
     }
 
-    * .catalog__item {
+     .catalog__item {
         width: 290px;
         height: 464px;
     }
 
 
 
-    .content__catalog__sidebar .item__mainpict {
+    .sidebar__item__mainpict {
         height: 200px;
     }
 
-    .content__cruise__title {
+    .item__cruise__title {
         font-size: 18px;
         line-height: normal;
     }
 
-    .content__cruise__pathtime {
+    .item__cruise__pathtime {
         font-size: 14px;
     }
 
-    .content__cruise__price {
+    .item__cruise__price {
         font-size: 30px;
         margin-top: 50px;
     }
@@ -703,11 +699,11 @@ address {
         height: 130px;
     }
 
-    .footer__title {
+    .info__title {
         margin-top: 9px;
     }
 
-    .social {
+    .footer__social {
         margin-bottom: 15px;
     }
 
