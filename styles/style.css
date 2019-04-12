@@ -14,8 +14,8 @@ p {
     padding: 0;
 }
 
-.mobile-drop {
-    display: none;
+button {
+    cursor: pointer;
 }
 
 .mainbutton {
@@ -30,8 +30,12 @@ p {
     width: 30px;
 }
 
-button {
-    cursor: pointer;
+.hero__mainlist,
+.hero__userlist,
+.hero__roublelist,
+.hero__languagelist,
+.catalog__sortlist {
+    display: none;
 }
 
 header {
@@ -160,7 +164,9 @@ h2 {
     font-stretch: normal;
     color: #0d3351;
 }
-
+h3{
+    display: inline-block;
+}
 
 ul {
     margin: 0;
@@ -191,20 +197,6 @@ a {
     margin-top: -80px;
 }
 
-#no__drop {
-    display: none;
-
-}
-
-#drop {
-    padding-top: 73px;
-    padding-left: 45px;
-    position: absolute;
-    display: block;
-    width: 420px;
-    height: 310px;
-    background: #0d3351;
-}
 
 li>a {
     color: white;
@@ -223,7 +215,7 @@ li>a {
     background-color: rgba(236, 236, 236, 0.89);
 }
 
-.content__sort {
+.catalog__sort {
     font-family: Raleway;
     font-size: 14px;
     font-weight: normal;
@@ -428,7 +420,7 @@ address {
         height: 315px;
     }
 
-    .content__sort {
+    .catalog__sort {
         margin-top: 11px;
         margin-bottom: 42px;
     }
@@ -475,7 +467,7 @@ address {
         margin: 0;
     }
 
-    .content__sort {
+    .catalog__sort {
         margin-bottom: 30px;
     }
 
@@ -533,13 +525,6 @@ address {
         height: 350px;
     }
 
-    #drop {
-        padding-top: 23px;
-        padding-bottom: 23px;
-        padding-left: 15px;
-        width: 250px;
-    }
-
     .cruise-more {
         margin-top: 25px;
         margin-bottom: 62px;
@@ -560,9 +545,6 @@ address {
 }
 
 @media only screen and (max-width: 750px) {
-    .mobile-drop {
-        display: block;
-    }
 
     .title {
         font-size: 50px;
@@ -620,15 +602,10 @@ address {
         margin-top: 43px;
     }
 
-    .content__sort {
+    .catalog__sort {
         margin-bottom: 20px;
     }
 
-    #drop {
-        height: 460px;
-        width: 250px;
-        padding-top: 30px;
-    }
 
     .info {
         display: none;

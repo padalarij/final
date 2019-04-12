@@ -17,12 +17,12 @@
                     <button class="mainbutton" id="mainnav" type="button">
 
                     </button>
-                    <nav id="no__drop">
-                        <ul>
-                            <li class="mobile-drop"><a href="#">
+                    <nav>
+                        <ul class="hero__mainlist">
+                            <li><a href="#">
                                     Личный кабинет
                                 </a></li>
-                            <li class="mobile-drop"><a href="#">
+                            <li><a href="#">
                                     Выбор валюты
                                 </a></li>
                             <li><a href="#">
@@ -56,7 +56,7 @@
                                 <img alt="" class="nav-logo" src="./images/user.svg">
                                 <a class="nav-url" href="#">Личный кабинет</a>
                                 <div class="blacktriangle"></div>
-                                <ul id="no__drop">
+                                <ul class="hero__userlist">
                                     <li>
                                         <a href="#">1</a>
                                     </li>
@@ -72,7 +72,7 @@
                                 <img alt="" class="nav-logo" src="./images/rouble.svg">
                                 <a class="nav-url" href="#">Рубль</a>
                                 <div class="blacktriangle"></div>
-                                <ul id="no__drop">
+                                <ul class="hero__roublelist">
                                     <li>
                                         <a href="#">1</a>
                                     </li>
@@ -85,14 +85,17 @@
                                 </ul>
                             </li>
                             <li class="hero-nav-item">
+                                <img alt="" class="nav-logo" src="./images/rouble.svg">
                                 <a class="nav-url" href="#">Ru</a>
-                                <div class="blacktriangle"></div>
-                                <ul id="no__drop">
+                                <ul class="hero__languagelist">
                                     <li>
-                                        <a href="#">eng</a>
+                                        <a href="#">1</a>
                                     </li>
                                     <li>
-                                        <a href="#">ru</a>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
                                     </li>
                                 </ul>
                             </li>
@@ -126,16 +129,16 @@
             <h2 class="content__title__catalog">
                 Каталог круизов
             </h2>
-            <div class="content__sort">
+            <div class="catalog__sort">
                 Сортировать круизы по цене
-                <ul id="no__drop">
+                <div class="blacktriangle">
+
+                </div>
+                <ul class="catalog__sortlist">
                     <li>Сортировать круизы по дате начала</li>
                     <li>Сортировать круизы по городу</li>
                     <li>Сортировать круизы по рейтингу</li>
                 </ul>
-                <div class="blacktriangle">
-
-                </div>
             </div>
             <div class="content__catalog">
                 <div class="catalog__item">
@@ -148,11 +151,10 @@
                         <a href="" class="content__cruise__title">
                             Морской круиз в Анапу
                         </a>
-
-                        <div class="bluetruangle">
-
-                        </div>
                     </h3>
+                    <div class="bluetruangle">
+
+                    </div>
                     <div class="content__cruise__pathtime">
                         <div class="zhir">Маршрут</div>: Сочи-Лазаревское-Геленджик-Анапа <br>
                         <div class="zhir">Продолжительность</div>: 10 ч. 0 мин.
@@ -174,11 +176,10 @@
                             <a href="#" class="content__cruise__title">
                                 Обзорная морская прогулка с экскурсией
                             </a>
-
-                            <div class="bluetruangle">
-
-                            </div>
                         </h3>
+                        <div class="bluetruangle">
+
+                        </div>
                         <div class="content__cruise__pathtime">
                             <div class="zhir">Маршрут</div>: Сочи-Адлер-Сочи (без высадки)<br>
                             <div class="zhir">Продолжительность</div>: 1 ч. 0 мин.
@@ -201,10 +202,11 @@
                                 Морская прогулка в Геленджик
                             </a>
 
-                            <div class="bluetruangle">
 
-                            </div>
                         </h3>
+                        <div class="bluetruangle">
+
+                        </div>
                         <div class="content__cruise__pathtime">
                             Маршрут: Сочи-Туапсе-Геленджик<br>
                             <div class="zhir">Продолжительность</div>: 12 ч. 30 мин.
@@ -228,11 +230,10 @@
                         <a href="" class="content__cruise__title">
                             Морской круиз в Новороссийск
                         </a>
-
-                        <div class="bluetruangle">
-
-                        </div>
                     </h3>
+                    <div class="bluetruangle">
+
+                    </div>
                     <div class="content__cruise__pathtime">
                         <div class="zhir">Маршрут</div>: Сочи-Геленджик-Новороссйиск-Геленджик-Сочи<br>
                         <div class="zhir">Продолжительность</div>: 13 ч. 0 мин.
@@ -252,11 +253,10 @@
                         <a href="" class="content__cruise__title">
                             Морская прогулка в Абрау-Дюрсо
                         </a>
-
-                        <div class="bluetruangle">
-
-                        </div>
                     </h3>
+                    <div class="bluetruangle">
+
+                    </div>
                     <div class="content__cruise__pathtime">
                         <div class="zhir">Маршрут</div>: Сочи-Абрау-Дюрсо<br>
                         <div class="zhir">Продолжительность</div>: 11 ч. 0 мин.
@@ -269,7 +269,6 @@
             </div>
             <button class="cruise-more" type="button">
                 Больше круизов
-                <div class="blackbluetrianglei"></div>
             </button>
         </div>
     </div>
