@@ -3,7 +3,7 @@ function Delete(list) {
     list.css({ "display": "none" });
 }
 function Add(list) {
-    list.css({ "display": "block", "position": "absolute", "background": "#0d3351", "padding-top": "15px", "padding-left": "15px", "padding-right": "15px", "border": "10px double #33c7fd", "padding-bottom": "10px" });
+    list.css({ "display": "block", "position": "absolute", "background": "#0d3351", "padding-top": "15px", "padding-left": "15px", "padding-right": "15px", "border": "5px solid orange", "padding-bottom": "10px" });
 }
 
 var arrdatalist = [$(".mainbutton"), $(".hero__mainlist"), $(".lk"), $(".hero__userlist"), $(".rouble"), $(".hero__roublelist"), $(".language"), $(".hero__languagelist")];
@@ -104,4 +104,14 @@ arrdatalist[6].click(
         }
     }
 );
+doc_w = $(window).width();
 
+$(".catalog__item__more").click(
+    function ()
+    {
+        $("div").not(".opencruise").css({"opacity":"0","background":"black"});
+        $(".opencruise").css({ "z-index":"1", "position": "fixed", "left": "400px" , "top" :"200px","background":"white","height":"400px","width":"500px", "border": "3px solid black"});
+        $("body").css({"overflow-y":"hidden"});
+    }
+
+)
