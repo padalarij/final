@@ -198,7 +198,9 @@ a {
 .content__title {
     margin-top: -80px;
 }
-
+.mobile-drop a {
+    display: none;
+}
 
 li>a {
     color: white;
@@ -724,8 +726,11 @@ address {
         margin-bottom: 39px;
     }
     li>a{
-        line-height: 1;
+        line-height: 1.5;
         font-size:15px;
+    }
+    .mobile-drop a {
+        display: block;
     }
 }
 

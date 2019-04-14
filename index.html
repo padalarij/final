@@ -13,16 +13,16 @@
     <header>
         <div class="container">
             <div class="hero">
-                <div class="hero__left">
+                <div class="hero-left">
                     <button class="mainbutton listbutton" type="button">
 
                     </button>
                     <nav>
                         <ul class="hero__mainlist list">
-                            <li><a href="#">
+                            <li class="mobile-drop"><a href="#">
                                     Личный кабинет
                                 </a></li>
-                            <li><a href="#">
+                            <li class="mobile-drop"><a href="#">
                                     Выбор валюты
                                 </a></li>
                             <li><a href="#">
@@ -86,7 +86,7 @@
                             </li>
                             <li class="hero-right__nav-item">
                                 <img alt="" class="nav-logo" src="./images/rouble.svg">
-                                <a class="nav-url" href="#" class="language" >Ru</a>
+                                <a class="nav-url" href="#" class="language">Ru</a>
                                 <div class="blacktriangle language listbutton"></div>
                                 <ul class="hero__languagelist list">
                                     <li>
@@ -116,9 +116,11 @@
                 <h1 class="title">
                     По чёрному морю
                 </h1>
-                <button class="choose-cruise" type="button">
-                    Выбрать круиз
-                </button>
+                <a href="#cruise">
+                    <button class="choose-cruise" type="button">
+                        Выбрать круиз
+                    </button>
+                </a>
             </div>
         </div>
         <link rel="stylesheet" href="./fonts/mainfont.css">
@@ -127,12 +129,12 @@
     <div class="content">
         <div class="container">
             <img src="./images/snake.svg" alt="" class="snake">
-            <h2 class="content__title">
+            <h2 class="content__title" id="cruise">
                 Каталог круизов
             </h2>
             <div class="content__sort">
                 Сортировать круизы по цене
-                <div class="blacktriangle sort listbutton">
+                <div class="blacktriangle listbutton sort">
 
                 </div>
                 <ul class="content__sortlist list">
@@ -304,7 +306,7 @@
             </div>
         </div>
     </footer>
-    <div class="opencruise" >
+    <div class="opencruise">
     </div>
     <script src="./scripts/jquery.js"></script>
     <script src="./scripts/mainscript.js"></script>
